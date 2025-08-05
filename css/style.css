@@ -28,7 +28,7 @@
     --pd-sm: 10px;
     --pd-md: 15px;
     --pd-lg: 20px;
-    --pd-xl: 25px;
+    --pd-xl: 140px;
 
 }
 
@@ -115,16 +115,21 @@ body {
 
 #hero {
     background-image: url(../img/jumbo.png);
-    padding: var(--pd-top-btm-lg);
-    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:  var(--pd-xl);
+    height: 500px;
 }
 
 .hero-content {
-    background-color: var(--bg-fuchsia);
     text-align: center;
     width: 50%;
-    height: 100%;
     margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
 }
 
 /* main content section */
