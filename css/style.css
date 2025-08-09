@@ -2,18 +2,14 @@
 :root {
 
     /* backgorund colors */
-    --bg-light-blu: lightblue;
-    --bg-orange: orange;
     --bg-blu: #255ee9;
-    --bg-pink: pink;
     --bg-white: white;
-    --bg-gray: rgb(226, 220, 220);
-    --bg-green: green;
+    --bg-gray: rgb(245, 245, 245);
     --bg-black: rgb(34, 38, 41);
-    --bg-fuchsia: fuchsia;
     --bg-coral: coral;
     --bg-sky-blu: skyblue;
     --bg-aqua: aqua;
+    --bg-purple: rgb(114, 137, 218);
 
     /* Text colors */
     --tx-white: white;
@@ -31,7 +27,7 @@
     --pd-xs: 5px;
     --pd-sm: 10px;
     --pd-md: 15px;
-    --pd-lg: 20px;
+    --pd-lg: 35px;
     --pd-xl: 159px;
 
 }
@@ -85,6 +81,13 @@ body {
     padding: 12.5px 15px;
     border-radius: 18px;
     background-color: var(--bg-black);
+    color: var(--tx-white)
+}
+
+.btn-purple {
+    padding: 10px 15px;
+    border-radius: 18px;
+    background-color: var(--bg-purple);
     color: var(--tx-white)
 }
 
@@ -188,48 +191,64 @@ h1 {
 
 .section-bg-white {
     background-color: var(--bg-white);
-    padding: var(--pd-top-btm-md);
-
-    /* debug */
-    height: 300px;
+    padding: var(--pd-top-btm-lg);
 }
 
 .section-bg-gray {
     background-color: var(--bg-gray);
-    padding: var(--pd-top-btm-md);
-
-    /* debug */
-    height: 300px;
-}
-
-.section-bg-white>div,
-.section-bg-gray>div {
-    height: 100%;
+    padding: var(--pd-top-btm-lg);
 }
 
 .block-text {
-    flex-basis: 60%;
-    background-color: var(--bg-light-blu);
+    flex-basis: 40%;
 }
 
 .block-img {
-    flex-basis: 40%;
-    background-color: var(--bg-pink);
+    flex-basis: 60%;
+}
+
+.content-title {
+    padding-top: var(--pd-lg);
+    font-size: 3rem;
+}
+
+.content-pharagraph {
+    padding-top: var(--pd-lg);
+    font-size: 1.4rem;
+    line-height: 39px;
 }
 
 /* action section */
 .section-action {
     background-color: var(--bg-gray);
-    padding: var(--pd-top-btm-md);
-
-    /* debug */
-    height: 500px;
+    padding: 25px 0 100px;
 }
 
 .block-action {
-    background-color: var(--bg-green);
-    height: 100%;
+    text-align: center;
     margin: 0 auto;
+}
+
+.action-img {
+    width: 100%;
+}
+
+.block-action h2,
+.block-action p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.adventure {
+    padding-top: 70px;
+    padding-bottom: var(--pd-lg);
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.adventure-title {
+    font-size: 1.6rem;
 }
 
 /* footer section */
