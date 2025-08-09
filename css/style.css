@@ -262,7 +262,7 @@ h1 {
 
 .top-footer {
     padding: var(--pd-top-btm-md);
-    /* border-bottom: 1px solid var(--bg-white); */
+    border-bottom: 1px solid var(--bg-purple);
 
     /* debug */
     height: 500px;
