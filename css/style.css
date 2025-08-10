@@ -256,6 +256,27 @@ h1 {
     font-size: 1.6rem;
 }
 
+.wave {
+    width: 100%;
+    line-height: 0;
+}
+
+.wave svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wave path {
+    fill: var(--bg-gray);
+}
+
+.wave-upside-down {
+    transform: rotate(180deg);
+    line-height: 0;
+}
+
+
 /* footer section */
 /* footer top */
 .footer {
